@@ -73,10 +73,10 @@
                      .range([0, width]);
 
             var max_deaths = d3.max(fetch_data, d=> +d.new_deaths); 
-            //var min_deaths = d3.min(fetch_data, d=> +d.new_deaths);
+            var min_deaths = d3.min(fetch_data, d=> +d.new_deaths);
 
             const yScale = d3.scaleLinear()
-                        .domain([0, max_deaths])
+                        .domain([min_deaths, max_deaths])
                         .range([height, 0]); 
           
         //append x and y axis with time effect
@@ -130,7 +130,7 @@
                     .attr("x", 0 - (height / 2))
                     .attr("dy", "1em")
                     .style("text-anchor", "middle")
-                    .text("# Deaths");
+                    .text("Change in number of deaths per day");
         }
      
     </script>
