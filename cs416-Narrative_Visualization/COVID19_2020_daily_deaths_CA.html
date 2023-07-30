@@ -11,8 +11,11 @@
 <body onload="init()">
 
     <h1 style="text-align: left;"> California Daily COVID-19 Deaths Count </h1>
-    <p>The chart below shows the statistics of daily deaths in California in 2020. 
+    <p> The daily increase in the number of deaths is related to the stay at home policy promulgated by the government and people's holiday travel.
+        When the policy was enacted, the number of deaths fell, but on Christmas and National Day, the number began to increase.The chart below shows the statistics of daily deaths in California in 2020. 
         It can be seen that the peak period is mid-December, and about 400 people die every day.</p>
+    <a href="https://www.gov.ca.gov/2020/03/19/governor-gavin-newsom-issues-stay-at-home-order/">Government stay at home policy</a>
+
     <div id="chart"></div>
 <script>
 
@@ -144,7 +147,7 @@
                 {
                     note: {
                         label: 
-                        "The first peak of COVID-19 in year 2020, about 100 daily deaths at that time",
+                        "The epidemic just started,  stay at home policy just release, about 100 daily deaths at that time",
                         bgPadding: 20,
                         title: "First Peak"
                     },
@@ -171,7 +174,7 @@
                     const annotation2 = [
                 {
                     note: {
-                        label: "The second peak of COVID-19 in year 2020, about 200 daily deaths at that time",
+                        label: "Shortly after the release of the stay at home policy, some people traveled on National Day, about 200 daily deaths at that time",
                         bgPadding: 20,
                         title: "Second Peak"
                     },
@@ -196,7 +199,7 @@
                     const annotation3 = [
                 {
                     note: {
-                        label: "The third peak of COVID-19 in year 2020, about 400 daily deaths at that time",
+                        label: "After the stay at home policy was issued for a period of time, it dropped sharply, but more people traveled on Christmas, which led to the highest death toll in the whole year， about 400 daily deaths at that time",
                         bgPadding: 10,
                         title: "Third Peak"
                     },
